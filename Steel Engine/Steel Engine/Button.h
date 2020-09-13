@@ -2,6 +2,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <SFML/window.hpp>
+#include <SFML/System.hpp>
 
 #include <string>
 
@@ -14,27 +15,28 @@ public:
 
 	}
 
-	Button(sf::Vector2f _size, sf::Color _color, sf::Vector2f _position, sf::Font& _font, std::string _text) : text()
+	Button(sf::Vector2f _size, sf::Color _color, sf::Vector2f _position, sf::Font &_font, std::string _text)
 	{
 		size = _size;
 		color = _color;
 		position = _position;
-		font = _font;
+
 		shape = sf::RectangleShape(_size);
 		shape.setFillColor(color);
 		shape.setPosition(_position);
 
-		text.setFont(font);
-		text.setPosition(sf::Vector2f(100.f,100.f));
-		text.setString(_text);
-		text.setCharacterSize(20);
-		text.setFillColor(sf::Color::Black);
+		text = sf::Text(_text, _font);
+		sf::FloatRect textRect = text.getLocalBounds();
+		text.setOrigin(textRect.left + textRect.width / 2.f, textRect.top + textRect.height / 2.f);
+		text.setCharacterSize(16);
+		text.setFillColor(sf::Color::White);
+		text.setPosition(sf::Vector2f(position.x + size.x / 2, position.y + size.y));
 	}
 
 	void drawButton(sf::RenderWindow &window)
 	{
 		window.draw(shape);
-		//window.draw(text);
+		window.draw(text);
 	}
 
 	void updateButton(sf::Vector2i mousePosition)
@@ -67,7 +69,6 @@ private:
 	sf::Vector2f size;
 	sf::Color color;
 	sf::Vector2f position;
-	sf::Font font;
 	sf::Text text;
 
 };
