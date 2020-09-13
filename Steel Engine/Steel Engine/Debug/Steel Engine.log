@@ -1,5 +1,4 @@
-﻿  Button.cpp
-  main.cpp
+﻿  main.cpp
 C:\Users\mmaar\Documents\GitHub\Steel-Engine\Steel Engine\Steel Engine\GUI.h(16,61): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
@@ -10,5 +9,4 @@ C:\Users\mmaar\Documents\GitHub\Steel-Engine\Steel Engine\Steel Engine\GUI.h(16,
               T=float
           ]
 C:\Users\mmaar\Documents\GitHub\Steel-Engine\Steel Engine\Steel Engine\SteelEngine.h(19,13): warning C4101: 'event': unreferenced local variable
-  Generating Code...
   Steel Engine.vcxproj -> C:\Users\mmaar\Documents\GitHub\Steel-Engine\Steel Engine\Debug\Steel Engine.exe
