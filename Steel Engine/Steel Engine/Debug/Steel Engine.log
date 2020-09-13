@@ -1,6 +1,24 @@
 ﻿  Button.cpp
   main.cpp
-C:\Users\mmaar\Documents\GitHub\Steel-Engine\Steel Engine\Steel Engine\GUI.h(19,61): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Steel Engine\Steel Engine\GUI.h(21,61): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Steel Engine\Steel Engine\GUI.h(27,93): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Steel Engine\Steel Engine\GUI.h(33,66): warning C4244: 'argument': conversion from 'T' to 'T', possible loss of data
           with
           [
               T=unsigned int

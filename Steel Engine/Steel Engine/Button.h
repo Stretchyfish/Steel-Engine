@@ -26,11 +26,12 @@ public:
 		shape.setPosition(_position);
 
 		text = sf::Text(_text, _font);
-		sf::FloatRect textRect = text.getLocalBounds();
-		text.setOrigin(textRect.left + textRect.width / 2.f, textRect.top + textRect.height / 2.f);
 		text.setCharacterSize(16);
 		text.setFillColor(sf::Color::White);
-		text.setPosition(sf::Vector2f(position.x + size.x / 2, position.y + size.y));
+		sf::FloatRect textRect = text.getLocalBounds();
+		text.setOrigin(textRect.left + textRect.width / 2.f, textRect.top + textRect.height / 2.f);
+
+		text.setPosition(sf::Vector2f(position.x + size.x / 2.f, position.y + size.y / 2));
 	}
 
 	void drawButton(sf::RenderWindow &window)
@@ -53,8 +54,8 @@ public:
 
 	bool checkMouseOver(sf::Vector2i mousePosition)
 	{
-		if (position.x < mousePosition.x && mousePosition.x <= position.x + size.x
-			&& position.y < mousePosition.y && mousePosition.y < position.y + size.y)
+		if (shape.getPosition().x < mousePosition.x && mousePosition.x <= shape.getPosition().x + shape.getSize().x
+			&& shape.getPosition().y < mousePosition.y && mousePosition.y < shape.getPosition().y + shape.getSize().y)
 		{
 			return 1;
 		}

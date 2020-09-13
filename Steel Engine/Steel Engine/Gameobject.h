@@ -8,10 +8,11 @@ class Gameobject
 public:
 	Gameobject()
 	{
-		texture.loadFromFile("character.png");
+		texture.loadFromFile("Steel.png");
 		sprite.setTexture(texture);
+		sprite.setPosition(sf::Vector2f(900.f, 170.f));
+		sprite.setScale(sf::Vector2f(1.f, 1.f));
 	}
-
 
 	sf::Sprite getSprite()
 	{

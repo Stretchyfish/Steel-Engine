@@ -55,7 +55,7 @@ public:
 	void draw()
 	{
 		// Clear the last frame
-		window.clear(sf::Color::White);
+		window.clear(sf::Color(192, 192, 192));
 
 		window.draw(character.getSprite());
 		gui.drawGUI(window);
