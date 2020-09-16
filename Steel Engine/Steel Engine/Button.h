@@ -42,6 +42,11 @@ public:
 
 	void updateButton(sf::Vector2i mousePosition)
 	{
+		//Update button size to accuratly fit screen
+
+
+
+		// If mouse hovers over button, change color
 		if (checkMouseOver(mousePosition))
 		{
 			shape.setFillColor(sf::Color(color.r + 20, color.g + 20, color.b + 20));
