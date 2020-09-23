@@ -1,4 +1,41 @@
-﻿  Source.cpp
-C:\Users\mmaar\Desktop\Engine\Engine\Source.cpp(19,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\mmaar\Desktop\Engine\Engine\Source.cpp(19,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  Engine.vcxproj -> C:\Users\mmaar\Desktop\Engine\Debug\Engine.exe
+﻿  Button.cpp
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Button.cpp(23,30): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Button.cpp(23,23): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Button.cpp(25,49): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Button.cpp(25,36): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Color.cpp
+  Engine.cpp
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Engine.cpp(18,13): warning C4101: 'event': unreferenced local variable
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Engine.cpp(42,65): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Engine.cpp(42,47): warning C4244: 'argument': conversion from 'unsigned int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  GraphicsObject.cpp
+  Source.cpp
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Source.cpp(19,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Source.cpp(19,21): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  Vector.cpp
+  Generating Code...
+  Engine.vcxproj -> C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Debug\Engine.exe

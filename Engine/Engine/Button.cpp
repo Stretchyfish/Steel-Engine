@@ -8,6 +8,11 @@
 
 namespace steel
 {
+	Button::Button() : shape() , size(), color(), position(), text(), font()
+	{
+
+	}
+
 	Button::Button(int width, int height, Color _color, Point _position, std::string _font, std::string _text)
 	{
 		if (!font.loadFromFile(_font))

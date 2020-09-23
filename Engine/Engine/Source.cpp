@@ -37,11 +37,13 @@ int main()
 	biggerBox.createSquare();
 
 	steel::GraphicsObject firstCircle(steel::circle);
+	steel::GraphicsObject firkant(steel::square);
 
 	std::vector<steel::GraphicsObject> list
 	{
 		box,
-		firstCircle
+		firstCircle,
+		firkant
 	};
 
 	engine.addObjects(list);

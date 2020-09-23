@@ -1,3 +1,6 @@
 C:\Users\mmaar\Desktop\Engine\Debug\Engine.pdb
 C:\Users\mmaar\Desktop\Engine\Engine\Debug\Engine.pdb
 C:\Users\mmaar\Desktop\Engine\Engine\Debug\Engine.vcxproj.CopyComplete
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Debug\Engine.pdb
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Debug\Engine.vcxproj.CopyComplete
+C:\Users\mmaar\Documents\GitHub\Steel-Engine\Engine\Engine\Debug\Engine.pdb

@@ -143,7 +143,7 @@
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="GraphicsObject.cpp" />
     <ClCompile Include="Color.cpp" />
-    <ClCompile Include="Point.cpp" />
+    <ClCompile Include="Vector.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>

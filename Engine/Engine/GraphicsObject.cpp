@@ -3,12 +3,12 @@
 namespace steel
 {
 	GraphicsObject::GraphicsObject() :
-		squareShape()
+		squareShape(), button()
 	{
 
 	}
 
-	GraphicsObject::GraphicsObject(int type)
+	GraphicsObject::GraphicsObject(int type) : squareShape(), button()
 	{
 		switch(type)
 		{
@@ -24,6 +24,11 @@ namespace steel
 			default:
 			break;
 		}
+	}
+
+	GraphicsObject::GraphicsObject(int type, Point Scalar)
+	{
+
 	}
 
 	void GraphicsObject::createSquare()

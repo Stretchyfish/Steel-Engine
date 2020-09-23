@@ -54,6 +54,7 @@ namespace steel
 	public:
 		GraphicsObject();
 		GraphicsObject(int type);
+		GraphicsObject(int type, Point Scalar);
 		void createSquare();
 		void changeColor();
 		void displayObject(sf::RenderWindow& _window);
@@ -61,6 +62,7 @@ namespace steel
 	private:
 		sf::RectangleShape squareShape;
 		sf::CircleShape circleShape;
+		Button button;
 	};
 
 	class Engine
