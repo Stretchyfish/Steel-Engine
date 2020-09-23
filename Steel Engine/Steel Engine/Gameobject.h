@@ -3,18 +3,54 @@
 #include <SFML/Graphics.hpp>
 #include <SFML/window.hpp>
 
+#include <string>
+
 class Gameobject
 {
 public:
-	Gameobject()
+	Gameobject() : position() , sprite(), texture()
 	{
-		texture.loadFromFile("Steel.png");
-		sprite.setTexture(texture);
-		sprite.setPosition(sf::Vector2f(900.f, 170.f));
-		sprite.setScale(sf::Vector2f(1.f, 1.f));
+
+	}
+	
+	Gameobject(std::string fileName) : position() , sprite(), texture()
+	{
+		if (texture.loadFromFile("Steel.png"))
+		{
+			sprite.setTexture(texture);
+			sprite.setPosition(sf::Vector2f(700.f, 120.f));
+			sprite.setScale(sf::Vector2f(1.f, 1.f));
+		}
 	}
 
-	sf::Sprite getSprite()
+	Gameobject(std::string fileName, sf::Vector2f _position) : sprite(), position(_position), texture()
+	{
+		if (texture.loadFromFile(fileName))
+		{
+			sprite.setTexture(texture);
+			sprite.setPosition(sf::Vector2f(700.f, 120.f));
+			sprite.setScale(sf::Vector2f(1.f, 1.f));
+		}
+
+		sprite.setPosition(_position);
+		position = _position;
+	}
+
+	void setSprite(std::string fileName)
+	{
+		if (texture.loadFromFile(fileName))
+		{
+			sprite.setTexture(texture);
+		}
+	}
+
+	void setPosition(sf::Vector2f _position)
+	{
+		position = _position;
+		sprite.setPosition(_position);
+	}
+
+	sf::Sprite &getSprite()
 	{
 		return sprite;
 	}

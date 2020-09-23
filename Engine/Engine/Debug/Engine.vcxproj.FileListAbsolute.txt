@@ -1,0 +1,3 @@
+C:\Users\mmaar\Desktop\Engine\Debug\Engine.pdb
+C:\Users\mmaar\Desktop\Engine\Engine\Debug\Engine.pdb
+C:\Users\mmaar\Desktop\Engine\Engine\Debug\Engine.vcxproj.CopyComplete

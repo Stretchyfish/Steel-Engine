@@ -1,0 +1,2 @@
+Height 1360
+Width 705

@@ -40,7 +40,7 @@ public:
 		Engine_Text.setCharacterSize(128);
 		Engine_Text.setFillColor(sf::Color::White);
 
-		Engine_Text.setPosition(sf::Vector2f(1100.f, 170.f));
+		Engine_Text.setPosition(sf::Vector2f(850.f, 120.f));
 	}
 
 	void updateGUI(sf::Vector2i mousePosition)
